@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="author" content="Sabrina" />
+  <meta name="description" content="Lorem ipsum dolor sit amet" />
+  <meta name="viewport"
+    content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+  <title>Binar: Challenge 04</title>
+
+  <!-- Example CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- navbar section -->
+  <section>
+    <nav class="navbar navbar-expand-lg navbar-light py-3">
+      <div class="container">
+        <div class="logo"><a href=""></a></div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Our Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Why Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Testimonial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-success">Register</button>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <!-- header section -->
+  <section id="rentHeader">
+    <div class="container-fluid headerSection pt-4 gx-0">
+      <div class="row gx-0">
+        <div class="col-md-6 headerArea gx-0 col-sm-12 col-xs-12">
+          <h1 class="headerTitle mb-3">Sewa & Rental Mobil Terbaik di kawasan Jakarta</h1>
+          <p class="headerText mb-5">Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan
+            harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
+        </div>
+        <div class="col-md-6 gx-0 col-sm-12 col-xs-12 ">
+          <img class="imgHeader" src="images/img_car.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- search area -->
+  <section id="searchCar">
+    <div class="container gx-5 mb-5">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card w-100 mx-auto py-3 ">
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+
+                <div class="flex-item me-3">
+                  <p class="mb-2">Tipe Driver</p>
+                  <select id="driver-type" class="form-select form-select-md">
+                    <option hidden>Pilih Tipe Driver</option>
+                    <option value="true">Dengan Sopir</option>
+                    <option value="false">Tanpa Sopir (Lepas Kunci)</option>
+                  </select>
+                </div>
+
+                <div class="flex-item me-3">
+                  <p class="mb-2">Pilih Tanggal</p>
+                  <div class="input-group date" id="datepicker">
+                    <input id="car-date" type="date" class="form-control">
+                    <span class="input-group-append">
+                    </span>
+                  </div>
+                </div>
+
+                <div class="flex-item me-3">
+                  <p class="mb-2">Pilih Jam</p>
+                  <div class="input-group date" id="timepicker">
+                    <input type="time" class="form-control" id="car-time" name="appt" min="10:00" max="17:00" required>
+                    <span class="input-group-append">
+                    </span>
+                  </div>
+                  <!-- <input type="time" id="time" name="appt" min="09:00" max="18:00" required> -->
+                </div>
+
+                <div class="flex-item me-3">
+                  <p class="mb-2">Jumlah Penumpang (Optional)</p>
+                  <div class="input-group passanger mb-3">
+                    <input id="passenger-number" type="number" class="form-control" aria-label="Sizing example input"
+                      aria-describedby="inputGroup-sizing-default">
+                    <span class="input-group-text "><img src="images/fi_users.png" alt=""></span>
+                  </div>
+                </div>
+
+                <div class="flex-item my-auto pt-3">
+                  <button class="btn btn-danger" id="clear-btn">Hapus</button>
+                  <button class="btn btn-success" id="load-btn">Cari Mobil</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container-fluid bg-white">
+      <div class="container overflow-hidden">
+        <div class="col">
+          <div class="row">
+            <!-- <button id="load-btn">Load</button> -->
+            <!-- <button id="clear-btn">Clear</button> -->
+            <div id="cars-container" class="d-flex justify-content-center flex-wrap card-deck gap-2 h-50"></div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+
+
+
+  <br><br><br>
+
+  <!-- <button id="clear-btn">Clear</button> -->
+  <!-- <div id="cars-container" class="col-md-4"></div> -->
+
+
+
+
+  <!-- footer -->
+  <section id="footer">
+    <div class="container py-3">
+      <div class="row">
+        <div class="col-md-3 col-sm-6 mb-3">
+          <p>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
+          <p><a href="">binarcarrental@gmail.com</a></p>
+          <p>081-233-334-808</p>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-3">
+          <a href="">
+            <p>Our services</p>
+          </a>
+          <a href="">
+            <p>Why Us</p>
+          </a>
+          <a href="">
+            <p>Testimonial</p>
+          </a>
+          <a href="">
+            <p>FAQ</p>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-3">
+          <p>Contact with us</p>
+          <a href=""><img src="images/icon_facebook.png" alt=""></a>
+          <a href=""><img src="images/icon_instagram.png" alt=""></a>
+          <a href=""><img src="images/icon_twitter.png" alt=""></a>
+          <a href=""><img src="images/icon_mail.png" alt=""></a>
+          <a href=""><img src="images/icon_twitch.png" alt=""></a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="logo ms-auto"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist /js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+  <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+  <script type="text/javascript" src="scripts/owl.js"></script>
+
+  <!-- Example Javascript -->
+  <script type="text/javascript" src="scripts/binar.js"></script>
+  <script type="text/javascript" src="scripts/app.example.js"></script>
+  <script type="text/javascript" src="scripts/car.example.js"></script>
+  <script type="text/javascript" src="scripts/main.example.js"></script>
+</body>
+
+</html>

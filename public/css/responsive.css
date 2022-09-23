@@ -1,0 +1,45 @@
+@media only screen and (max-width:600px){
+    .gmbrcar{
+    position: absolute;
+    top: 83%;
+    width: 100%;
+    opacity: .1;
+    }
+    .header-kiri{
+        width:100%;
+        z-index: 2;
+    }
+    .header-kiri h1{
+        width: 70%;
+    }
+    .os-left {
+        width: 100%;
+    }
+
+    .os-py .d-flex {
+        flex-direction: column;
+        height: 100vh;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .whyUs .d-flex {
+        flex-direction: column;
+    }
+
+    .whyUs .d-flex .bg-white {
+        margin: 20px auto;
+    }
+
+    .coverarea h1{
+        font-size: 25px;
+    }
+
+    .footerArea {
+        background-color: #dfdfec !important;
+    }
+}
+
+/* @media only screen and (max-width: 990px){
+    .navbar-toggler
+} */

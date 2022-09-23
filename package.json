@@ -1,0 +1,22 @@
+{
+  "name": "binar-fsw-challenge-04",
+  "version": "1.0.0",
+  "description": "Project HTTP Server dan DOM",
+  "main": "server/index.js",
+  "author": "Fikri Rahmat Nurhidayat <fnurhidayat@binar.co.id>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "serve-static": "^1.15.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  
+  "repository": "https://github.com/fnurhidayat/probable-garbanzo.git"
+}

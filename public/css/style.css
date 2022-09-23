@@ -1,0 +1,306 @@
+.body {
+    font-family: helvetica;
+}
+
+p {
+    font-size:14px;
+}
+
+
+/* navbar */
+
+.navbar-light {
+    background: #F1F3FF !important;
+}
+
+a.nav-link {
+    color: #000 !important;
+    font-size: 14px !important;
+    margin-right: 20px;
+    font-style: bold;
+}
+
+a.nav-link:hover{
+    color: #fff !important;
+    background-color: #0D28A6;
+    border-radius: 5px;
+}
+
+.logo {
+    width: 6.5rem ;
+    height: 2rem;
+    background-color: #0D28A6;
+
+}
+
+.btn-success {
+    background-color: #5CB85F !important;
+    border: none !important;
+    font-weight: bold;
+    font-size: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.btn-success a{
+    text-decoration: none;
+    color: #F1F3FF !important;
+}
+
+.btn-success:hover{
+    background-color: #5CB85F !important;
+    border: none !important;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* header */
+
+.headerSection {
+    background-color: #F1F3FF;
+}
+
+.headerTitle {
+    font-size: 36px;
+    font-weight: bold;
+    width: 90%;
+}
+
+.headerText {
+    width: 75%;
+}
+
+.headerArea {
+    padding-top: 6em;
+    padding-left: 7em;
+}
+
+.imgHeader {
+    max-width: 100%;
+}
+
+/* rental */
+
+.rentalmgArea {
+    margin-top: 3em;
+    margin-left: 7em;
+}
+
+.rentalArea {
+    margin-top: 5em;
+    margin-left: 1em;
+}
+
+.rentalTitle {
+    font-size: 24px;
+    font-weight: bold;
+    width: 70%;
+}
+
+.rentalText {
+    width: 70%;
+}
+
+.rentalList {
+    padding-left: 0 !important;
+    width: 90%;
+}
+
+
+/* whyus */
+
+.whyusTitle {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card {
+    width: 85%;
+}
+
+.card-body {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.titleCard {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* testimonial */
+
+.owl-nav {
+    height: 25px;
+    margin-left:48%;
+    font-size: 30px;
+}
+
+
+button.owl-prev span {
+    margin-right: 20px;
+    padding: 0px 10px;
+}
+
+button.owl-next span {
+    margin-right: 20px;
+    padding: 0px 10px;
+}
+
+button.owl-prev span:hover{
+    background-color: #5CB85F;
+    border-radius: 50%;
+    color: #fff;
+}
+
+button.owl-next span:hover{
+    background-color: #5CB85F;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.testTitle {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#testimonial .card {
+    width: 90% !important ;
+    height: auto;
+    background-color: #F1F3FF;
+}
+
+#testimonial .d-flex {
+    margin: 30px;
+}
+
+#testimonial .d-flex img.person{
+    width: 80px;    
+    height: 80px;
+}
+
+#testimonial .d-flex img.rate{
+    width: 80px;    
+    height: 18px;
+}
+
+#testimonial .d-flex ul li {
+    list-style-type: none;
+}
+
+.name {
+    font-weight: 500;
+}
+
+
+/* start */
+
+.startArea {
+    background-color: #0D28A6;
+    border-radius: 5px;
+    height: auto;
+}
+
+.titleStart {
+    font-size: 36px;
+    font-weight: bold;
+    max-width: 80%;
+}
+
+.textStart {
+    width: 50%;
+}
+
+/* faq */
+.accordion-button {
+    height: 60px;
+    border: 1px solid #F1F3FF;
+}
+
+.askTitle {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* footer */
+
+#footer {
+    background-color: #F1F3FF; 
+}
+
+#footer a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
+#footer img {
+    margin-right: 15px;
+}
+
+
+/* RENT HTML */
+
+#searchCar .card {
+    margin-top: -60px;
+}
+
+#rentHeader .headerArea {
+        padding-top: 3em;
+        padding-left: 7em;
+}
+
+.form-select {
+    font-size: 14px !important;
+}
+
+.form-select option:hover, option:focus {
+    background-color: #5CB85F;
+}
+
+input.form-control {
+    font-size: 14px!important;
+}
+
+.carsName {
+    height: 20px;
+} 
+
+/* .showCarCard {
+    width: 100%;
+    height: 180px;
+}
+
+.showCardImg {
+    height: 20px;
+    width: 20px;
+}*/
+
+.showCardText {
+    font-size: 14px!important;
+}
+
+p.price {
+    font-weight: 600;
+    font-size: 20px;
+} 
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+/*  */
+.input-group-append {
+    cursor: pointer;
+  }
+
+
+@media only screen and (max-width: 750px){
+    .headerArea {
+        padding-top: 2em;
+        padding-left: 2em;
+    }
+}
